@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+ 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="box-login">
+        <h2>Login</h2>
+
+        
+        <form id="loginForm" onsubmit="return validateLoginForm(event)">
+            <div class="input">
+                <p>Username:</p>
+                <input type="text" id="username" required>
+
+                <p>Email:</p>
+                <input type="email" id="email" required>
+
+                <p>Password:</p>
+                <input type="password" id="password" required>
+            </div>
+
+            
+            <div id="error-message">
+                Please fill in all fields.
+            </div>
+
+           
+            <div class="btn-login">
+                <a href="javascript:void(0);" onclick="validateLoginForm(event)">Login</a>
+            </div>
+        </form>
+
+       
+        <div class="signup">
+            <p>Don't have an account? <span><a href="login.html">Sign up</a></span></p>
+
+        </div>
+    </div>
+
+   
+    <script src="script.js"></script>
+
+</body>
+</html>
